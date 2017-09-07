@@ -65,11 +65,10 @@ class Money
 end
 
 
-# def coin(coinValue,coinType)
-#   amount = 1111
-#   remainder = amount % coinValue
-#   quotient = amount / coinValue
-#   coinType = quotient
-#   amount = remainder
-#   return coinType
-# end
+# puts "Enter the ammount of cents to convert to coins"
+# cent_input = 0
+# cent_input = gets.chomp
+# cent_input = Integer(cent_input)
+#
+# money = Money.new(cent_input)
+# puts money.coin_combos
