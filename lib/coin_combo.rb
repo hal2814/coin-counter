@@ -1,3 +1,5 @@
+#! usr/bin/env ruby
+
 class Money
   attr_accessor(:amount,:pennies, :nickels, :dimes, :quarters)
   # attr_(:pennies, :nickels, :dimes, :quarters)
@@ -14,6 +16,7 @@ class Money
     coin(10)
     coin(5)
     coin(1)
+    print_money
   end
 
   def print_money
@@ -37,6 +40,10 @@ class Money
         output = output + ", #{@pennies} pennies"
     elsif @pennies == 1
       output = output + ", #{@pennies} penny"
+    end
+    if output[0] == ',' && output[1] == ' '
+      output[0] = ''
+      output[0] = ''
     end
     return output
   end
